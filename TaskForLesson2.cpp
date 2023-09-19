@@ -26,7 +26,27 @@ class FooString{
 };
 
 int main(){
-    FooString a("stroka");
-    a.show("stroka");
+    char* text_one = "stroka";
+    char* text_two = "stooka";
+
+    FooString a(text_one);
+    a.show(text_two);
+    
+    char* result;
+    if (strlen(text_one) != strlen(text_two)){
+        result = "different strings";
+    }
+    else{
+        
+            if (!!strcmp(text_one,text_two)){
+                result = "different strings";
+            }
+            else result = "equal strings";
+        }
+
+    cout << result;
+
+    cout << "\n" << "Если выведен (0different strings) ИЛИ (1equal strings), то результат сравнения в классе верный)";
+
     return 0;
 }
