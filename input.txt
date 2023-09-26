@@ -1,0 +1,6 @@
+1. What utilit often uses to create Linux core?
+- Cmake
++ Make
+- Grandle
+- Maven
+- Basel
